@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NYSL: Registration Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/nysl_style.css">
+    <link rel="icon" type="image/png" href="img/nysl_favicon.png">
+    </head>
+    <body>	
+      <header>
+        <img id="logo" src="img/nysl_logo.png" alt="NYSL logo"/>
+        <h1 id="sitebrand">Northside Youth Soccer League</h1>
+        <h2 id="title">Registration Form</h2>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About NYSL</a></li>
+          <li><a href="game_info.html">Games Info</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+      <section class="registration">
+        <form action="show_data.html" method="GET">
+          <div>
+            <label class="halfwide">Player's First Name:<input  type="text" name="first_name" placeholder="First Name..."></label>
+            <label class="halfwide">Last Name:<input type="text" name="last_name" placeholder="Last Name..."></label>
+          </div>
+          <div>
+            <label class="fullwide">Street Address:<input type="text" name="street_address" placeholder="Your Address..."></label>
+          </div>
+          <div>
+            <label class="halfwide">City:<input id="city" type="text" name="city" placeholder="Your City..."></label>
+            <label class="halfwide">Zip Code:<input id="zcode" type="text" name="zip_code" placeholder="Zip Code..."></label>
+          </div>
+          <div>
+            <label class="halfwide">Birth Date (mm/dd/yyyy): <input type="text" name="birth_date" placeholder="mm/dd/yyyy..."></label>
+            <div class="padded halfwide">
+              Gender:<br/>
+              <label class="gender"><input type="radio" name="gender" value="male">male</label>
+              <label class="gender"><input type="radio" name="gender" value="female">female</label>
+            </div>
+          </div>
+          <div>
+            <label class="fullwide">Parent/Guardian: <input type="text" name="parent" placeholder="Parent/Guardian last and first name..."></label>
+          </div>
+          <div>
+            <label class="halfwide">Contact Phone: <input type="text" name="contact_phone" placeholder="Contact Phone or Cellphone..."></label>
+            <label class="halfwide">Contact Email: <input type="text" name="contact_email" placeholder="name@domain.com..."></label>
+          </div>
+          <div class="indent">
+            <p><b>Which elementary schools do you live near?</b></p>
+              <label class="halfwide">First Closest School<select name="first_closest_school">
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard A Yeager">Howard A Yeager</option>
+                <option value="Marjorie P Hart">Aarjorie P Hart</option>
+                <option value="North Elementary">North Elementary</option>
+                <option value="South Elementary">South Elementary</option>
+              </select></label>
+              <label class="halfwide">Second Closest School<select name="first_closest_school">
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard A Yeager">Howard A Yeager</option>
+                <option value="Marjorie P Hart">Aarjorie P Hart</option>
+                <option value="North Elementary">North Elementary</option>
+                <option value="South Elementary">South Elementary</option>
+              </select></label>
+          </div>
+          <div class="padded halfwide">
+            <p><b>What position(s) do you normally play? </b>(check all that apply)</p>
+            <table>
+              <tr>
+                <td><label><input type="checkbox" name="position_normaly_played" value="Foward">Foward</label></td>
+                <td><label><input type="checkbox" name="position_normaly_played" value="Midfield">Midfield</label></td>
+              </tr>
+              <tr>
+                <td><label><input type="checkbox" name="position_normaly_played" value="Defense">Defense</label></td>
+                <td><label><input type="checkbox" name="position_normaly_played" value="Goalkeeper">Goalkeeper</label></td>
+              </tr>
+            </table>
+          </div>
+          <div class="padded halfwide">
+            <p><b>What position(s) do you want to play? </b>(check all that apply)</p>
+            <table>
+              <tr>
+                <td><label><input type="checkbox" name="position_wanted_to_play" value="Foward">Foward</label></td>
+                <td><label><input type="checkbox" name="position_wanted_to_play" value="Midfield">Midfield</label></td>
+              </tr>
+              <tr>
+                <td><label><input type="checkbox" name="position_wanted_to_play" value="Defense">Defense</label></td>
+                <td><label><input type="checkbox" name="position_wanted_to_play" value="Goalkeeper">Goalkeeper</label></td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <label class="fullwide"><input type="checkbox" name="position_wanted_to_play" value="Foward"><b>Already Have a Uniform</b></label>
+          </div>
+             <div class="indent">
+              <label class="halfwide">Jersey Size<select name="Jersey Size">
+                <option value="Youth Small">Youth Small</option>
+                <option value="Youth Medium">Youth Medium</option>
+                <option value="Youth Large">Youth Large</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Extra-Large">Extra-Large</option>
+              </select></label>
+              <label class="halfwide">Shorts Size<select name="Shorts Size">
+                <option value="Youth Small">Youth Small</option>
+                <option value="Youth Medium">Youth Medium</option>
+                <option value="Youth Large">Youth Large</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Extra-Large">Extra-Large</option>
+              </select></label>
+          </div>
+            <div class="fullwide padded">
+              <p><b>Permission to Play</b></p>
+              <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>
+              <p>By entering your name below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms. </p>
+            </div>
+            <div>
+            <label class="halfwide">Parent/Guardian Signature:<input  type="text" name="Signature" placeholder="Signature..."></label>
+            <label class="halfwide">Date:<input type="text" name="Date" placeholder="Date..."></label>
+          </div>
+          <div class="fullwide padded">
+          <input type="submit" value="submit">
+          </div>
+        </form>
+      </section>
+    </body>
+  </html>

@@ -1,0 +1,364 @@
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-image: url("../img/design3_back.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  background-size:cover;
+  padding:15px;
+}
+
+/*
+  ========================================
+                ENCABEZADO
+  ========================================
+*/
+
+body, header, #sitebrand,#title, #logo, section, nav,nav ul,nav ul li,nav ul li a{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  position:relative;
+  top: 0;
+  background-image: url("../img/design3_0.jpg");  
+  background-size: 100% 100%;
+  background-position: 50% 20%;
+  width: 100%;
+  height: 100px;
+}
+
+#sitebrand{
+  position:relative;
+  top: 15px;
+  left:140px;
+  font-size: 60px;
+  font-weight: bold;
+  font-variant:small-caps;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: #a6ff2a;
+}
+
+#title{
+  position:relative;
+  top:60px;
+  background: black;
+  width:100%;
+  height:42px;
+  text-align:center;
+  font-size:35px;
+  font-variant:small-caps;
+  color: white;
+  z-index:2;
+}
+
+#logo{
+  width:100px;
+  position: absolute;
+  top:0;
+  left:10px;
+  z-index: 1;
+}
+
+section ul:first-child{}
+/*
+  ========================================
+                NAVEGADOR
+  ========================================
+*/
+
+nav{
+  position:sticky;
+  top:0;
+  z-index: 1;
+  background-color: #1c6b82;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+nav li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+nav li:last-child {
+  float: right;
+  border-right: none;
+  border-left: 1px solid #bbb;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  font-size:17px;
+  font-variant:small-caps;
+  font-weight:bolder;
+  text-align: center;
+  line-height:30px;
+  padding: 14px 16px;
+  text-decoration: none;
+  width:120px;
+  height:30px;
+}
+nav li a:hover {
+  background-color: #033949;
+}
+
+nav .active {
+  background-color: black;
+}
+/*
+  ========================================
+                  CUERPO
+  ========================================
+*/
+
+section { 
+  position:relative;
+  top:43px;
+  width:80%;
+  box-sizing: border-box;
+  padding:15px;
+  padding-left:110px;
+  padding-right:110px;
+  font-size: 120%;
+  margin:auto;
+  background:rgba(255,255,255,0.55);
+ 
+}
+
+/*
+  ========================================
+                    INDEX
+  ========================================
+*/
+
+.news h3{
+  font-style: italic;
+}
+
+.news ul p{
+  text-indent: 3%;
+  line-height: 85%;
+}
+
+/*
+  ========================================
+                    ABOUT
+  ========================================
+*/
+
+.description p{
+  padding-left: 3.5%;
+  padding-right: 3%;
+}
+
+/*
+  ========================================
+              RULES & POLICIES
+  ========================================
+*/
+
+.rules h3 {
+  font-size:35px;
+  text-align:center;
+  line-height:70px;
+  margin:0;
+  padding:0;
+}
+
+.rules h4 {
+  font-size:25px;
+  text-align:center;
+  line-height:40px;
+  margin:0;
+  padding:0;
+}
+
+.rules .subtitulo {
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.rules h5 {
+  font-size:20px;
+  margin:0;
+  padding:0;
+}
+
+.rules .vacio {
+  list-style-type: none;
+}
+
+.rules .square{
+  list-style-type:square;
+}
+
+.rules .numeros{
+  list-style-type:decimal;
+}
+
+.rules .circle{
+  list-style-type:circle;
+}
+
+.rules .letras{
+  list-style-type:lower-alpha;
+}
+
+/*
+  ========================================
+              GAME INFORMATION
+  ========================================
+*/
+
+.g_info  h3{
+  text-align:center;
+  margin-top:50px;
+}
+
+.g_info footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0;
+}
+
+.g_info table{
+  margin-bottom:50px;
+}
+
+.g_info .games{  width:70%}
+
+.g_info .games tr:nth-child(2n -1) td:first-child{
+  text-indent:30px;
+  vertical-align:top;
+}
+
+.g_info .games thead tr th:first-child,.g_info .games  tbody tr:nth-child(2n) td:first-child{
+  width:30%;
+}
+
+.g_info .games tr th{
+  text-align: left;
+  text-decoration:underline;
+}
+
+.g_info .locations{  width:100%}
+
+.g_info .locations thead{
+  text-align: left;
+  font-size:1.2em;
+}
+
+.g_info .locations{
+  border-collapse:collapse;
+}
+
+.g_info .locations tbody{
+  text-align: center;
+}
+
+.g_info .locations tbody td{
+  border-bottom: 1px solid #42764d;
+  vertical-align:middle;
+}
+
+.g_info .locations tbody iframe{
+  width:200px;
+  height:100px;
+  border:none;
+  margin:8px;
+}
+
+.g_info .locations tbody tr{
+  background-color:lightgreen;
+}
+
+.g_info .locations tbody tr:hover{
+  background-color:#42764d;
+}
+
+.g_info ul{
+  list-style:none;
+}
+
+/*
+  ========================================
+                    FORM
+  ========================================
+*/
+
+.registration input[type=text],.registration select{
+  padding: 6px 10px;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width:100%;
+  height:35px;
+}
+
+.registration input[type=submit]{
+  padding: 6px 10px;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width:100%;
+  height:40px;
+  font-size:1.2em;
+  font-variant:small-caps;
+    color:white;
+  background-color:black;
+}
+
+.registration input[type=submit]:hover{
+  background-color:green;
+}
+
+.registration div{
+  text-indent:0;
+  width:100%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0;
+  margin:0;
+}
+
+.registration label,.registration .padded{
+  display: inline-block;
+  padding: 12px 12px;
+  box-sizing: border-box;
+}
+
+.registration .indent p{
+  text-indent:12px;
+  padding: 0;
+}
+
+.registration .fullwide{
+  width:100%;
+}
+
+.registration .halfwide{
+  width:50%;
+  float:left;
+}
+
+.registration .gender{
+  height:35px;
+  font-size:1em;
+}
